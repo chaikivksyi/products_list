@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Product list</h1>
+            <div class="flex align-center justify-center">
+                <input type="search" placeholder="search..." id="searchProducts">
+                <button class="show-filter">Filters</button>
+            </div>
+        </div>
+        <div class="flex products">
+            <div class="cards-container">
+                <span class="products-not-found">Products not found</span>
+                <div class="cards flex flex-wrap"></div>
+                <div class="pages flex justify-center"></div>
+            </div>
+            <aside id="filters">
+                <button class="hide-filter">&times;</button>
+                <span class="filter-title">Filters</span>
+                <div class="filter">
+                    <span class="filter-label">Price</span>
+                    <div class="filter-price">
+                        <input type="number" id="price_from">
+                        <span>-</span>
+                        <input type="number" id="price_to">
+                    </div>
+                </div>
+                <div class="filter">
+                    <span class="filter-label">Color: </span>
+                    <div class="filter-item">
+                        <input type="checkbox" id="red" value="red" data-filter="color">
+                        <label for="red">Red</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="blue" value="blue" data-filter="color">
+                        <label for="blue">Blue</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="green" value="green" data-filter="color">
+                        <label for="green">Green</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="black" value="black" data-filter="color">
+                        <label for="black">Black</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="white" value="white" data-filter="color">
+                        <label for="white">White</label>
+                    </div>
+                </div>
+                <div class="filter">
+                    <span class="filter-label">size: </span>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size_s" value="s" data-filter="size">
+                        <label for="size_s">S</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size_m" value="m" data-filter="size">
+                        <label for="size_m">M</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="size_l" value="l" data-filter="size">
+                        <label for="size_l">L</label>
+                    </div>
+                </div>
+                <div class="filter">
+                    <span class="filter-label">material: </span>
+                    <div class="filter-item">
+                        <input type="checkbox" id="material_1" value="material 1" data-filter="material">
+                        <label for="material_1">Material 1</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="material_2" value="material 2" data-filter="material">
+                        <label for="material_2">Material 2</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="material_3" value="material 3" data-filter="material">
+                        <label for="material_3">Material 3</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" id="material_4" value="material 4" data-filter="material">
+                        <label for="material_4">Material 4</label>
+                    </div>
+                </div>
+                <button id="btn-filter">Filter</button>
+            </aside>
+        </div>
+    </div>
+
+<script src="js/products.js"></script>
+</body>
+</html>
